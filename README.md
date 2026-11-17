@@ -2,6 +2,9 @@
 
 `FastAPI · ONNX Runtime · SQLite · Docker · Playwright`
 
+🌐 **[라이브 데모 열기](https://inspection-gate.onrender.com/)**  
+무료 인스턴스는 유휴 상태 뒤 첫 접속 시 기동에 최대 약 1분이 걸릴 수 있습니다.
+
 제조 이미지 판정에서 모델 제안과 사람의 최종 결정을 분리한 **로컬 판정 보조 데모**입니다.
 
 ```text
