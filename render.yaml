@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: inspection-gate
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: INSPECTION_GATE_AUDIT_PATH
+        value: /app/artifacts/audit.jsonl
+      - key: INSPECTION_GATE_STORE_PATH
+        value: /app/artifacts/audit.jsonl.sqlite3
