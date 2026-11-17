@@ -1,0 +1,43 @@
+:root { font-family: system-ui, sans-serif; color: #17202a; background: #f7f9fb; }
+body { margin: 0; }
+main { max-width: 760px; margin: 2rem auto; padding: 0 1rem 2rem; overflow-wrap: anywhere; }
+.skip-link { position: absolute; left: -9999px; top: 0; background: #fff; color: #0b5cab; padding: .5rem .75rem; z-index: 10; }
+.skip-link:focus { left: .5rem; top: .5rem; }
+:focus-visible { outline: 3px solid #b45309; outline-offset: 2px; }
+button:disabled { opacity: .6; cursor: not-allowed; }
+section { min-width: 0; background: #fff; border: 1px solid #cbd5df; border-radius: 8px; padding: 1rem; margin-top: 1rem; }
+label, input, select, textarea, button { display: block; margin-top: .5rem; }
+input, select, textarea { box-sizing: border-box; max-width: 100%; width: 100%; padding: .45rem; }
+input, select, textarea, button { font: inherit; }
+fieldset { min-inline-size: 0; }
+fieldset label { display: inline; margin-right: 1rem; }
+fieldset input { display: inline; width: auto; }
+button { max-width: 100%; overflow-wrap: anywhere; background: #0b5cab; color: #fff; border: 1px solid transparent; border-radius: 4px; padding: .6rem .85rem; cursor: pointer; }
+.boundary, .notice { border-left: 4px solid #0b5cab; padding: .75rem; background: #eaf3fc; }
+.tech-tags { color: #3e4c59; font-weight: 700; letter-spacing: .01em; }
+.flow ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; padding: 0; list-style: none; }
+.flow li { display: grid; gap: .35rem; padding: .75rem; border: 1px solid #cbd5df; border-radius: 6px; background: #f7f9fb; }
+.flow li span { color: #3e4c59; }
+#error { color: #9d1c1c; font-weight: 700; }
+#message { color: #1d6b35; font-weight: 700; }
+dl { display: grid; grid-template-columns: minmax(0, 10rem) minmax(0, 1fr); gap: .35rem .75rem; }
+dt { font-weight: 700; } dd { min-width: 0; margin: 0; }
+#queue-list { padding-left: 1.25rem; }
+#queue-list li { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: .5rem 0; }
+#queue-list button { margin-top: 0; }
+#queue-list li > span { min-width: 0; flex: 1 1 16rem; }
+#queue-status { font-weight: 700; }
+
+@media (max-width: 40rem) {
+  dl { grid-template-columns: minmax(0, 1fr); }
+  .flow ol { grid-template-columns: minmax(0, 1fr); }
+  dd + dt { margin-top: .5rem; }
+  fieldset label { display: block; margin-right: 0; }
+}
+
+@media (forced-colors: active) {
+  button { border-color: ButtonText; background: ButtonFace; color: ButtonText; }
+  button:disabled { border-color: GrayText; color: GrayText; opacity: 1; }
+  :focus-visible { outline-color: Highlight; }
+  .boundary, .notice { border-color: CanvasText; }
+}

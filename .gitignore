@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+.pytest-*/
+.ouroboros/
+artifacts/
+*.pyc
+
+# Local persistent review state
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+data/real_slot/images/
+data/real_slot/reviewed.json

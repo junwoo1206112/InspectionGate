@@ -1,0 +1,8 @@
+.git
+__pycache__
+.pytest_cache
+.pytest-*
+.ouroboros
+artifacts
+data/real_slot/images
+*.pyc

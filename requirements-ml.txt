@@ -1,0 +1,5 @@
+-r requirements.txt
+# Offline training/export toolchain only. The serving image needs onnxruntime
+# from requirements.txt, not PyTorch or the ONNX package.
+torch>=2.6
+onnx>=1.16,<2
